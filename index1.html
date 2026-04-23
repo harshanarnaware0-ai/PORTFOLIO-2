@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Harsha R Narnaware</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #06243e;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #072d57;
+            margin-bottom: 20px;
+        }
+
+        /* Main Content Style */
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            padding-left: 30px;
+        }
+
+        h1 {
+            color: #0c3b6c;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            border-bottom: 2px solid rgb(9, 9, 109);
+            padding-bottom: 5px;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fcfcfc;
+            border-left: 4px solid rgb(8, 8, 91)
+        }
+
+        .tech-stack {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 10px;
+                padding: 20px;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            .main-content {
+                padding-left: 0;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="portfolio photo.jpg" alt="Harsha R. Narnaware" class="profile-img">
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <br> harshanarnaware0@gmail.com</p>
+            <p><strong>Phone:</strong> <br> 7498284139</p>
+            <p><strong>Field:</strong> <br> Data Science Student</p>
+        </div>
+
+        <h2>Strengths</h2>
+        <ul>
+            <li>Problem-solving</li>
+            <li>Creative thinking</li>
+            <li>Teamwork</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Harsha R. Narnaware</h1>
+        <p><em>Data Science Student </em></p>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I’m Harsha R. Narnaware, a Data Science student focused on turning data into meaningful insights. I work with statistics, programming, and machine learning to solve practical problems and support better decision-making. I value clarity, analytical thinking, and building solutions that are useful beyond the classroom.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Degree:</strong> Bachelor of Technology in Data Science</p>
+            <p><strong>Status:</strong> Currently Pursuing</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skill-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">SQL</span>
+                <span class="skill-item">Pandas</span>
+                <span class="skill-item">NumPy</span>
+                <span class="skill-item">Matplotlib</span>
+                <span class="skill-item">MySQL</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <strong>Student Performance Prediction</strong>
+                <p>Developed a machine learning model to predict academic performance based on study hours and attendance.</p>
+                <p class="tech-stack">Tools: Python, Pandas, Scikit-learn</p>
+            </div>
+
+            <div class="project">
+                <strong>Sales Data Analysis Dashboard</strong>
+                <p>Designed an interactive dashboard to analyze sales trends and revenue performance.</p>
+                <p class="tech-stack">Tools: Power BI, Excel</p>
+            </div>
+                        <div class="project">
+                <strong>House Price Prediction</strong>
+                <p>Built a regression model to estimate house prices based on location and amenities.</p>
+                <p class="tech-stack">Tools: Python, Linear Regression, NumPy</p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>To build a career in Data Science where I can apply statistics, programming, and machine learning to solve real-world problems, contribute to data-driven decision-making, and continuously grow through practical experience and innovation.</p>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
